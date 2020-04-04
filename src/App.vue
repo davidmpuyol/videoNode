@@ -1,10 +1,15 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <md-app>
+      <md-app-toolbar class="md-primary">
+        <div class="md-toolbar-row">
+          <span class="md-title">501 Game</span>
+        </div>
+      </md-app-toolbar>
+      <md-app-content>
+        <router-view />
+      </md-app-content>
+    </md-app>
   </div>
 </template>
 
